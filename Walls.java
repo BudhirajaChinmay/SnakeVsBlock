@@ -8,7 +8,7 @@ public class Walls {
 	private Rectangle shape;
 	
 	public Walls() {
-		setShape(new Rectangle(20,200,Color.WHITE));
+		setShape(new Rectangle(5,200,Color.WHITE));
 		shape.setLayoutX(Math.random()*480);
 		shape.setLayoutY(130);
 	}

@@ -5,7 +5,7 @@ import java.util.Random;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
-public class Blocks {
+public class Blocks{
 
 	private Rectangle shape;
 	private int value;
@@ -23,15 +23,15 @@ public class Blocks {
 		if (isvisible == 0) {
 			shape.setVisible(false);
 		}
-		else {
-			value = randint.nextInt(101);
-			if (value <= 25) {
+		else{
+			value = randint.nextInt(21);
+			if (value <= 5) {
 				shape.setFill(Color.BLUE);
 			}
-			else if (value > 25 && value <= 50) {
+			else if (value > 5 && value <= 10) {
 				shape.setFill(Color.BROWN);
 			}
-			else if (value > 50 && value <= 75) {
+			else if (value > 10 && value <= 15) {
 				shape.setFill(Color.CHOCOLATE);
 			}
 			else {
@@ -52,6 +52,5 @@ public class Blocks {
 	public Rectangle getShape() {
 		return shape;
 	}
-
 
 }

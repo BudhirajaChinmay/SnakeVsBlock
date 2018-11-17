@@ -1,16 +1,22 @@
 package Game2;
 
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Shape;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Balls {
 
-	private Circle Shape ;
+	private ImageView Shape ;
 	private int value;
-	public Balls() {
+	public Balls() throws FileNotFoundException {
 		
-		setShape(new Circle(Math.random()*400,120,5,Color.YELLOW));
+		Image ballImg = new Image(new FileInputStream("D:\\eclipse-workspace\\SnakvsBlock\\src\\Game2\\FP\\ball.png"));
+		Shape= new ImageView(ballImg);
+		Shape.setFitHeight(20);
+		Shape.setFitWidth(20);
+
 		// TODO Auto-generated constructor stub
 	}
 
@@ -29,12 +35,9 @@ public class Balls {
 		
 	}
 
-	public Circle getShape() {
+	public ImageView getShape() {
 		return Shape;
 	}
 
-	public void setShape(Circle shape) {
-		Shape = shape;
-	}
 
 }
