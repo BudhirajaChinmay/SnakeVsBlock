@@ -1,4 +1,3 @@
 # SnakeVsBlock
-Advance Programming Project - 1
 
-Deadline 1:- Static GUI 2nd Novenmber
+Full Documentation of the code is available in index.html !
